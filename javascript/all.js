@@ -49,7 +49,7 @@ $(document).ready(function()
       .load(function() {
         var
         size = [this.width,this.height],
-        width = size[0]*(ui.value)/100,
+        width = size[0]*(ui.value)/200,
         height = size[1]*(ui.value)/100,
         left = center[0] - width*0.5,
         top = center[1] - height*0.5;
