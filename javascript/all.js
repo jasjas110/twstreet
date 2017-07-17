@@ -89,7 +89,7 @@ $(document).ready(function()
     basesize = $userimage.width(),
     size = getBackgroundSize($userimage.css('background-size')),
     position = getBackgroundPosition($userimage.css('background-position')),
-    scale = basesize/300;
+    scale = basesize/500;
 
     var
     template = $('input[name=template]:checked').val(),
@@ -128,8 +128,8 @@ function createImage(template,source,x,y,w,h){
   userimage.src = source;
 
   var resize_canvas = document.getElementById("result");
-  resize_canvas.width = 500;
-  resize_canvas.height = 500;
+  resize_canvas.width = 2000;
+  resize_canvas.height = 1200;
 
   var ctx = resize_canvas.getContext("2d");
   ctx.rect(0,0,500,500);
