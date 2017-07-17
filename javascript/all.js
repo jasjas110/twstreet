@@ -49,7 +49,7 @@ $(document).ready(function()
       .load(function() {
         var
         size = [this.width,this.height],
-        width = size[0]*(ui.value)/200,
+        width = size[0]*(ui.value)/100,
         height = size[1]*(ui.value)/100,
         left = center[0] - width*0.5,
         top = center[1] - height*0.5;
@@ -89,7 +89,7 @@ $(document).ready(function()
     basesize = $userimage.width(),
     size = getBackgroundSize($userimage.css('background-size')),
     position = getBackgroundPosition($userimage.css('background-position')),
-    scale = basesize/500;
+    scale = basesize/300;
 
     var
     template = $('input[name=template]:checked').val(),
